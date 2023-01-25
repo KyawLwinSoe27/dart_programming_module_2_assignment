@@ -1,5 +1,5 @@
 void main(){
-  Map<String,String?> Person = {
+  Map<String,String?> person = {
     "name" : "Kyaw Lwin Soe",
     "age" : "20",
     "university" : null,
@@ -9,10 +9,11 @@ void main(){
     "study" : "flutter",
     "class" : null
   };
-  print(Person.length); //8
+  print(person.length); //8
 
-  Person.removeWhere((key, value) => value == null); // remove null values
-  var keys = Person.keys;
+  person.removeWhere((key, value) => value == null); // remove null values
+  var keysList = person.keys;
+  var keys = keysList.join(',');
   print(keys);
 
 }
